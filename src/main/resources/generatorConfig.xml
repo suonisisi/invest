@@ -1,0 +1,15 @@
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="dsql" targetRuntime="MyBatis3DynamicSql">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/invest?useUnicode=true&amp;characterEncoding=utf8" password="root" userId="root"/>
+
+        <javaModelGenerator targetPackage="com.invest.stock.basic.dao" targetProject="src/main/java"/>
+
+        <javaClientGenerator targetPackage="com.invest.stock.basic.mapper" targetProject="src/main/java"/>
+
+        <table tableName="stock_basic" />
+    </context>
+</generatorConfiguration>
